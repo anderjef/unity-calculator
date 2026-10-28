@@ -1,1 +1,5 @@
-# Project2
+# Unity Calculator
+
+## Demo
+
+![Sample screenshot](sample-screenshot.png)
