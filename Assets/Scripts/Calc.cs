@@ -303,7 +303,7 @@ public class Calc : MonoBehaviour
 
         Debug.Log(answer);
         output.text = answer;
-        this.number1Variable.text = number1;
+        number1Variable.text = number1;
         number2Variable.text = number2;
         rememberNumVariable.text = rememberNum;
         opVariable.text = op;
