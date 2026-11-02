@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System;
+﻿using System;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Calc : MonoBehaviour
 {
@@ -20,7 +18,7 @@ public class Calc : MonoBehaviour
     public void Start()
     {
         output = GameObject.Find("OutputText").GetComponentInChildren<Text>();
-        number1Variable= GameObject.Find("number1Variable").GetComponentInChildren<Text>();
+        number1Variable = GameObject.Find("number1Variable").GetComponentInChildren<Text>();
         number2Variable = GameObject.Find("number2Variable").GetComponentInChildren<Text>();
         rememberNumVariable = GameObject.Find("rememberNumVariable").GetComponentInChildren<Text>();
         opVariable = GameObject.Find("opVariable").GetComponentInChildren<Text>();
@@ -33,7 +31,7 @@ public class Calc : MonoBehaviour
         rememberOpVariable.text = "";
     }
 
-    void Update()
+    private void Update()
     {
         if (hovering)
         {
@@ -50,7 +48,7 @@ public class Calc : MonoBehaviour
             }
         }
     }
-    
+
     public void onClick()
     {
         string buttonText;
